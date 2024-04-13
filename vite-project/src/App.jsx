@@ -12,7 +12,7 @@ import NoPage from './pages/nopage/NoPage';
 import MyState from "./context/data/myState"
 import Login from "./pages/registration/Login"
 import SignUp from './pages/registration/SignUp';
-import productInfo from './pages/productInfo/productInfo'
+import ProductInfo from "./pages/productInfo/ProductInfo"
 
 function App() {
   return (
@@ -26,10 +26,11 @@ function App() {
         <Route path="/*" element={<NoPage/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<SignUp/>}/>
-        <Route path="/productInfo" element={<productInfo/>}/>
+        <Route path="/productinfo/:id" element={<ProductInfo/>}/>
         
       </Routes>
     </Router>
+    
     </MyState>
   )
 }
