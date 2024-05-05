@@ -13,6 +13,9 @@ import MyState from "./context/data/myState"
 import Login from "./pages/registration/Login"
 import SignUp from './pages/registration/SignUp';
 import ProductInfo from "./pages/productInfo/ProductInfo"
+import AllProducts from './pages/allproducts/AllProducts';
+import AddProduct from './pages/admin/dashboard/page/AddProduct';
+import UpdateProduct from './pages/admin/dashboard/page/UpdateProduct';
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/productinfo/:id" element={<ProductInfo/>}/>
+        <Route path="/allproducts" element={<AllProducts/>}/>
+        <Route path="/addproduct" element={<AddProduct/>}/>
+        <Route path="/updateproduct" element={<UpdateProduct/>}/>
         
       </Routes>
     </Router>
